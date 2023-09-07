@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale-1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="door.css">
+</head>
+<body>
+    <div class="container">
+    <h1 id="doorStatus" style="color: #333"> The Door is CLOSE!</h1>
+    <img src="door_closed_.jpg" id="imgStatus">
+    <br>
+    <button onclick="openDoor()">Open the door</button>
+    <button onclick="closeDoor()">Close the door</button>
+</div>
+<script>
+
+function openDoor() {
+            document.getElementById("imgStatus").src = "door_open_.jpg";
+            document.getElementById("doorStatus").innerHTML = "The Door is OPEN!";
+        }
+        function closeDoor(){
+            document.getElementById("imgStatus").src = "door_closed_.jpg";
+            document.getElementById("doorStatus").innerHTML = "The Door is CLOSE!";
+        }
+    
+</script>
+</body>
